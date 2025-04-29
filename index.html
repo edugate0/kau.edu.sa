@@ -75,7 +75,6 @@
             transform: translateY(-50%);
             font-size: 20px;
             color: #fff;
-            background-color: #4CAF50;
             border: radius 10%;
             width: 30px;
             height: 30px;
@@ -115,8 +114,14 @@
 
             if (username === storedUsername && password === storedPassword) {
                 alert('تسجيل الدخول ناجح!');
-                window.location.href = "banner.html"; // توجيه المستخدم للصفحة التالية
-            } else {
+                window.location.href = "stud.html"; // توجيه المستخدم للصفحة التالية
+            } 
+            if (username === '462966715' && password === '0590913777') {
+                alert('تسجيل الدخول ناجح!');
+                window.location.href = "studs.html"; // توجيه المستخدم للصفحة التالية
+            } 
+            
+            else {
                 alert('اسم المستخدم أو كلمة المرور غير صحيحة.');
             }
         }
@@ -142,11 +147,11 @@
                 <h3>تسجيل دخول جامعة الملك عبدالعزيز</h3>
                 <div class="input-group">
                     <input type="text" id="username" placeholder="اسم المستخدم">
-                    <span class="icon">&#128100;</span>
+                    <span class="icon"></span>
                 </div>
                 <div class="input-group">
                     <input type="password" id="password" placeholder="كلمة المرور">
-                    <span class="icon">&#128274;</span>
+                    <span class="icon"></span>
                 </div>
                 <button onclick="authenticateUser()">تسجيل دخول</button>
                 <a href="#" style="display: block; margin-top: 10px; color: #007BFF; text-decoration: none;">نسيت كلمة المرور؟</a>
